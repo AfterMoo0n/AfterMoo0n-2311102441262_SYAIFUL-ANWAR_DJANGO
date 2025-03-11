@@ -3,7 +3,7 @@
 [![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff)](#)
 [![Django](https://img.shields.io/badge/Django-%23092E20.svg?logo=django&logoColor=white)](#)
 
-Website ini merupakan portfolio pribadi saya yang berisi tentang informasi diri saya.
+Perkenalkan Saya Syaiful Anwar , website ini akan menjadi portofolio saya dalam mendevelop website dengan framework django 
 
 ## Ada apa saja di website ini?
 
