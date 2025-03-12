@@ -1,15 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="id">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
-    <meta name="viewport" content="width-device-width, Initial-scale-1.0">
-    <title>{{tittle}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - WebsiteKu</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; margin: 0; }
+        nav { background: #3498db; padding: 10px; }
+        nav a { color: white; text-decoration: none; margin: 0 15px; font-size: 18px; }
+        nav a:hover { text-decoration: underline; }
+        .container { margin: 50px auto; max-width: 600px; }
+        .btn { background: #2ecc71; color: white; padding: 10px 20px; border: none; font-size: 16px; cursor: pointer; text-decoration: none; display: inline-block; margin-top: 20px; }
+        .btn:hover { background: #27ae60; }
+        footer { background: #222; color: white; padding: 15px; margin-top: 30px; }
+    </style>
 </head>
-
 <body>
-    <h1>{{welcome}}</h1>
-    <h2><a style="color: red;" href="{%url 'about' %}">ABOUT</a></h2>
+
+   
+    <nav>
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'about' %}">About</a>
+        <a href="/admin/">Admin</a> 
+    </nav>
+
+    <div class="container">
+        <h1>Selamat Datang di WebsiteKu</h1>
+        <p>Ini adalah halaman utama website Anda.</p>
+        <a href="{% url 'about' %}" class="btn">Pelajari Lebih Lanjut</a>
+    </div>
+
+   
+    <footer>
+        <p>&copy; 2025 WebsiteKu. Semua Hak Dilindungi.</p>
+    </footer>
+
 </body>
 </html>

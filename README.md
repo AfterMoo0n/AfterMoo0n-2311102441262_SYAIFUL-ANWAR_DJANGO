@@ -8,10 +8,10 @@ Perkenalkan Saya Syaiful Anwar , website ini akan menjadi portofolio saya dalam 
 ## Ada apa saja di website ini?
 
 1. Halaman Utama - Menampilkan ringkasan dari masing-masing halaman.
-2. Halaman Projek - Menampilkan projek apa saja yang telah saya buat.
+2. Halaman About - Menampilkan projek apa saja yang telah saya buat.
 3. Halaman Blog - Menampilkan tulisan yang saya tulis.
 
-## Cara Menjalankan Project
+## Praktikum 2 Cara instalansi django dan  Menjalankan Project
 
 1. Salin projek
 
@@ -48,3 +48,22 @@ source .venv/bin/activate
 ```shell
 pip install django
 ```
+
+5. Jalankan project
+
+```shell
+python manage.py runserver
+```
+# Praktikum 3
+Di Praktikum ini saya melakukan
+- Membuat directori baru ( media, static, templates)
+- membuat file baru pada directory websiteku (nama dari website Utama ) , yaitu (views.py)
+- menambahkan file pada folder static ( page.js, picture.png, style.css)
+- Menambahkan file about.html
+- menambahkan file about.html dan home.html 
+- konfigurasi pada websiteku di bagian settings menambahkan import os pada line 12 kemudian mengubah secret key menambahkan * pada bagian allowed_host untuk menyesuaikan alamat dari host mana yang dapat mengakses ( bisa mengganti dengan ip addres 
+  atau domain atau hosting yang kita miliki) . kemudian mengubah setting dirs. pada TEMPLATES jika memerlukan html maka kita bisa  untuk menyesuaikan set folder template html yang berfungsi ketika ingin merender template. yang terakhir pada konfigurasi settings.py yaitu mengdownload sqliteclient untuk dabases menggunakan databases sqlite3
+- konfigurasi urls.py memetakan jalur url yang benar pada file views.py (isinya ada fungsi untuk jalur dari file home.html dan abaout.html)
+- menambahkan path abaout dan path home pada urls.py
+- menambahkan static admin , setting.py
+
