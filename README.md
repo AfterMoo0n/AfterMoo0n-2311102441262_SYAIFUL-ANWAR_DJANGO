@@ -67,3 +67,29 @@ Di Praktikum ini saya melakukan
 - menambahkan path abaout dan path home pada urls.py
 - menambahkan static admin , setting.py
 
+# Praktikum 4
+- Membuat apps dan Model
+
+1. Membuat App user
+```commandline
+django-admin startapp user
+```
+2. Membuat App berita
+```commandline
+django-admin startapp berita
+```
+
+3. Make Migrations
+```commandline
+python manage.py makemigration
+```
+
+4. Migrate
+```commandline
+python manage.py migrate
+```
+
+5. Install Pillow dalam venv
+```commandline
+pip install pillow
+```

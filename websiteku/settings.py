@@ -37,7 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'websiteku'
+    'websiteku',
+    'user',
+    'pelajar',
 ]
 
 MIDDLEWARE = [
@@ -75,9 +77,13 @@ WSGI_APPLICATION = 'websiteku.wsgi.application'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+     'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': 'sahabatawan',
+            'USER': 'root',
+            'PASSWORD': '',
+            'HOST': '127.0.0.1',   # Or an IP Address that your DB is hosted on
+            'PORT': '3306',
     }
 }
 
